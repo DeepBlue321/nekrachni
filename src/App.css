@@ -1,0 +1,16 @@
+.App {
+  text-align: center;
+  width: 100%;
+max-width: 415px;
+margin: auto;
+position: relative;
+height: 100vh;
+}
+
+.menuIcon{
+  position: absolute;
+  right: 10px;
+  top:10px;
+  width: fit-content;
+  cursor: pointer;
+}
