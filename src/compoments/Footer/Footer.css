@@ -9,7 +9,7 @@
   width: 100%;
   max-width: 415px;
   padding: 15px;
-  background-color: black;
+  background-color: var(--base-color);
   gap: 70px;
 }
 
@@ -17,12 +17,13 @@
   align-items: center;
 }
 
-.footer__text{
+.footer__text {
   color: white;
-  
+  font-size: small;
 }
 
-
-.MuiSvgIcon-root{
+.MuiSvgIcon-root {
   color: aliceblue;
+  width: 0.5em;
+  height: 0.5em;
 }
