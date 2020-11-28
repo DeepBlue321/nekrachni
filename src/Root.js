@@ -6,6 +6,7 @@ import ProfileSettings from "./sites/ProfileSettings/ProfileSettings";
 import CourseList from "./sites/CourseList/CourseList";
 import WorldList from "./sites/WorldList/WorldList";
 import Home from "./Home/Home";
+import Error404 from "./sites/errors/Error404";
 
 const RootComponent = function() {
 
@@ -13,13 +14,13 @@ const RootComponent = function() {
     return (
     <div id="app">
             <Switch>
-                <Route path="/profil">
+                <Route path="/profil/">
                     <Profile level={5} avatar={"src"} points={25} name={"Karel"}/>
                 </Route>
                 <Route path="/obchod">
                     <Shop money={25} />
                 </Route>
-                <Route path="/nastaveni_profilu">
+                <Route path="/profil/nastaveni_profilu">
                     <ProfileSettings studyType="Ležérní"/>
                 </Route>
                 <Route path="/prehled_kurzu">
@@ -33,6 +34,7 @@ const RootComponent = function() {
                     <Home setMenu={setMenu}
                           menu={menu}/>
                 </Route>
+                <Route path=""><Error404/></Route>
             </Switch>
         {/*<Toolbar/>
         <Footer/>
